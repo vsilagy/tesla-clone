@@ -2,30 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-	padding: 0;
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-		Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-		sans-serif;
+@font-face {
+	font-family: 'Gotham SSm';
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
+	src: url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Bold_Web.woff2)
+			format('woff2'),
+		url(/fonts/GothamSSm-Bold_Web.woff2) format('woff2');
 }
-
-a {
-	color: inherit;
-	text-decoration: none;
+@font-face {
+	font-family: 'Gotham SSm';
+	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
+	src: url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Medium_Web.woff2)
+			format('woff2'),
+		url(/fonts/GothamSSm-Medium_Web.woff2) format('woff2');
 }
-
+@font-face {
+	font-family: 'Gotham SSm';
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+	src: url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Book_Web.woff2)
+			format('woff2'),
+		url(/fonts/GothamSSm-Book_Web.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Gotham SSm';
+	font-weight: 300;
+	font-display: swap;
+	font-style: normal;
+	src: url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Light_Web.woff2)
+			format('woff2'),
+		url(/fonts/GothamSSm-Light_Web.woff2) format('woff2');
+}
 * {
-	box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-	html {
-		color-scheme: dark;
-	}
-	body {
-		color: white;
-		background: black;
-	}
+	font-family: 'Gotham SSm', sans-serif;
 }
