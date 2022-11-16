@@ -38,6 +38,3 @@
 			format('woff2'),
 		url(/fonts/GothamSSm-Light_Web.woff2) format('woff2');
 }
-* {
-	font-family: 'Gotham SSm', sans-serif;
-}
