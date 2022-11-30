@@ -6,12 +6,12 @@ A Tesla landing page clone built with Next.js and Tailwind
 
 ### Tesla site design
 
-![screenshot](/public/Screenshot.png)
+![screenshot](/public/screenshot.png)
 
 ## Built with:
 
 ![Stack](https://skills.thijs.gg/icons?i=nextjs,tailwind,vercel)
 
-- [Nextjs](https://nextjs.org/)
-- [Tailwind](https://tailwindcss.com/)
-- [Vercel](https://vercel.com/)
+- Framework: [Nextjs](https://nextjs.org/)
+- Styling: [Tailwind](https://tailwindcss.com/)
+- Deployment: [Vercel](https://vercel.com/)
