@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -5,6 +6,11 @@ import logo from '../public/Tesla-logo.svg';
 import { GrClose } from 'react-icons/gr';
 import { HiChevronRight } from 'react-icons/hi';
 const Navbar = () => {
+	const [sideBar, setSideBar] = useState(false);
+
+	const handleSideBar = () => {
+		setSideBar(!sideBar);
+	};
 	return (
 		<>
 			<Head>
@@ -58,21 +64,31 @@ const Navbar = () => {
 						<li className="py-2 px-4  hover:bg-black hover:bg-opacity-5 hover:rounded">
 							<a href="https://tesla.com/teslaaccount">Account</a>
 						</li>
-						<li className="py-2 px-4  hover:bg-black hover:bg-opacity-5 hover:rounded">
+						<li
+							onClick={handleSideBar}
+							className="py-2 px-4  hover:bg-black hover:bg-opacity-5 hover:rounded">
 							Menu
 						</li>
 					</ul>
 				</div>
 				<div className="xl:hidden">
-					<button className="py-2 px-4 bg-black bg-opacity-5 rounded">
+					<button
+						onClick={handleSideBar}
+						className="py-2 px-4 bg-black bg-opacity-5 rounded">
 						Menu
 					</button>
 				</div>
 			</nav>
-			<div className="absolute top-0 right-0 w-80 h-full z-10 bg-white">
+			<div
+				className={
+					sideBar
+						? 'absolute top-0 right-0 w-80 h-full z-10 bg-white transform translate-left-full '
+						: 'fixed right-full'
+				}>
 				<div className="flex justify-end pt-5 px-8">
 					<GrClose
-						className="p-2 rounded hover:bg-gray-200"
+						onClick={handleSideBar}
+						className="p-2 rounded hover:bg-black/5 cursor-pointer"
 						size={32}
 					/>
 				</div>
