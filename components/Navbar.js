@@ -66,7 +66,7 @@ const Navbar = () => {
 						</li>
 						<li
 							onClick={handleSideBar}
-							className="py-2 px-4  hover:bg-black hover:bg-opacity-5 hover:rounded">
+							className="py-2 px-4 cursor-pointer hover:bg-black hover:bg-opacity-5 hover:rounded">
 							Menu
 						</li>
 					</ul>
